@@ -1,0 +1,18 @@
+{
+  "name": "gotandajs_20171006",
+  "version": "1.0.0",
+  "description": "by Google Slides API",
+  "main": ".",
+  "scripts": {
+    "start": "md2gslides"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:darai0512/talks.git"
+  },
+  "author": "Daiki Arai",
+  "license": "MIT",
+  "devDependencies": {
+    "md2gslides": "^0.3.0"
+  }
+}
