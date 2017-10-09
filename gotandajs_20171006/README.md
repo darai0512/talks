@@ -106,12 +106,12 @@ export default hoge;
 
 ### Diff (Node.js)
 
-- [Modules API](https://nodejs.org/dist/latest-v8.x/docs/api/modules.html)が消える
-- そこから生えてたGlobal変数等も消える
+- [Modules API](https://nodejs.org/dist/latest-v8.x/docs/api/modules.html)が消えるのでそこから生えてたGlobal変数等も消える
   - `module`
   - `require.cache`
-  - `__dirname`
   - `NODE_PATH`
+  - `__dirname/__filename`
+    - [`import.meta`](https://github.com/tc39/proposal-import-meta)で代替予定
   - etc...
 
 ---
