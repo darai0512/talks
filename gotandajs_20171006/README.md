@@ -1,5 +1,3 @@
----
-
 ## .mjs + HTTP/2 = Universal JS
 
 2017/10/06 @Gotanda.js #9

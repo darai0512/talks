@@ -26,6 +26,10 @@ $vi index.html
 <section data-markdown="XXX.md" ...>
 ```
 
+### get PDF
+
+https://gist.github.com/uupaa/7744760
+
 ## setup impress.js
 
 Prepare [Gemfile](https://github.com/tsucchi/ruby-markdown2impress),  
