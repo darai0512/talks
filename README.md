@@ -61,6 +61,15 @@ $npm start -- path/to/file.md
 $ls -l ~/.credentials/md2gslides.json
 ```
 
+but now, it is inconvenient...
+
+- Not available strikethrough(取り消し線)
+- Error message is only 1 pattern, so unkind...
+- Many making time due to Authentication
+  - over 20 seconds even if only 2,3 pages...
+- Not available multiple hyperlinks every one line
+- Error if including a hyperlink in the beginning of unorder list
+
 ## setup apache
 
 https://qiita.com/darai0512/items/d88662773a070b1bc750#apache
