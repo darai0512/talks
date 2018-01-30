@@ -17,9 +17,9 @@
 
 ---
 
-### Question
+### Ice Break
 
-本題に入る前の肩慣らしに
+社内でNode.js普及させてます。変わり種の一題を。
 
 ```
 $ node -p  '{a: 1}'
@@ -249,16 +249,14 @@ export default (input) => validation(input);
 
 ---
 
-### Try HTTP/2 with express: 鍵作成
-
-オレオレ証明書を作成
+### Try HTTP/2 with express: オレオレ証明書作成
 
 ```
 $brew upgrade openssl  # macデフォのだとversionが古くてできない
 $openssl version
 OpenSSL 1.0.2l  25 May 2017
 
-$openssl genrsa -aes128 -out my.key 2048  # AES-128. DES、3DES、SEEDは非推奨
+$openssl genrsa -out my.key 2048
 $openssl req -new -key my.key -out my.csr  # 対話では全てdefaultを回答
 $openssl x509 -req -days 365 -in my.csr -signkey my.key -out my.cert
 ```
