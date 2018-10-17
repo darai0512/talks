@@ -1,39 +1,58 @@
 # Displaying
 ## Online
 
-- [node_school_20170424](https://darai0512.github.io/talks/node_school_20170424/)
+- [nodeschool_20170424](https://darai0512.github.io/talks/nodeschool_20170424/)
 - [gotandajs_20171006](https://darai0512.github.io/talks/gotandajs_20171006/)
+- [meguroes_20181004](https://darai0512.github.io/talks/meguroes_20181004/)
 
 ## Offline
 
-Using localhost on apache (mac)
+use apache(mac) and access: http://localhost/~darai0512/talks/<dirname>/
 
-http://localhost/~darai0512/talks/<dirname>/
+setup apache ref: https://qiita.com/darai0512/items/d88662773a070b1bc750#apache
 
-# Tools
-## setup reveal.js
-
-```
-$wget https://github.com/hakimel/reveal.js/archive/3.1.0.tar.gz
-$tar -xzvf 3.1.0.tar.gz -C . 
-
-$vi index.html
-# setup theme(= change background and animation)
-# XXX.css: http://qiita.com/tbpgr/items/1782561aaa734e5edf8d
-<link rel="stylesheet" href="css/theme/XXX.css" id="theme">
-  
-# setup reading markdown file(= XXX.md) to 'data-' property
-<section data-markdown="XXX.md" ...>
-```
-
-### get PDF
+## PDF
 
 https://gist.github.com/uupaa/7744760
 
-## setup impress.js
+- slide URL + `?print-pdf`
+- CMD + P & output pdf
 
-Prepare [Gemfile](https://github.com/tsucchi/ruby-markdown2impress),  
-and use the following command if you don't have Gemfile.lock file.
+# How to make this repository
+
+```
+$npm i --production
+```
+
+make the following difference to use emoji
+
+```
+$vi node_modules/reveal.js/plugin/markdown/markdown.js
+-				var markdown = getMarkdownFromSlide( section );
++				var markdown = getMarkdownFromSlide( section ).replace(/[\s]+:([a-z_]+):/g, '<i class="em em-$1" style="font-size: 0.9em"></i>');
+
+ 				section.innerHTML = marked( markdown );
+```
+
+copy index.html, and edit `README.md`!
+
+```
+$cp -r init slide
+$vi slide/README.md
+your presentation here!
+```
+
+option: edit [reveal.js theme](https://revealjs.com/#/themes)
+
+```
+$vi slide/index.html
+<link rel="stylesheet" href="css/theme/XXX.css" id="theme">
+```
+
+# Other slide frameworks
+## [impress.js](https://github.com/tsucchi/ruby-markdown2impress)
+
+exec the following command if you don't have Gemfile.lock file.
 
 ```
 $sudo gem install bundler
@@ -52,11 +71,11 @@ Gems included by the bundle:
 $bundle exec markdown2impress README.md
 ```
 
-## setup md2gslides
+## md2gslides
 
 ```
-$npm install
-$npm start -- path/to/file.md
+$npm i
+$npm run googleslide -- path/to/file.md
 # enter your code => created your slides & token
 $ls -l ~/.credentials/md2gslides.json
 ```
@@ -69,7 +88,3 @@ but now, it is inconvenient...
   - over 20 seconds even if only 2,3 pages...
 - Not available multiple hyperlinks every one line
 - Error if including a hyperlink in the beginning of unorder list
-
-## setup apache
-
-https://qiita.com/darai0512/items/d88662773a070b1bc750#apache

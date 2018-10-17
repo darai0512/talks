@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
   <link rel="stylesheet" href="../node_modules/reveal.js/css/reveal.css">
-  <link rel="stylesheet" href="../node_modules/reveal.js/css/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="../node_modules/reveal.js/css/theme/blood.css" id="theme">
 
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="../node_modules/reveal.js/lib/css/zenburn.css">
@@ -38,7 +38,7 @@
     <div class="slides">
       <section data-markdown="README.md"
                data-separator="^\n---\n$"
-               data-separator-vertical="^\n>>>$"
+               data-separator-vertical="^\n------\n$"
                data-notes="^Note:"
                data-charset="UTF-8">
       </section>
@@ -53,14 +53,17 @@
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-      margin: 0.1,
-      maxScale: 1.5,
       controls: true,
+      controlsLayout: 'edge',
       progress: true,
       slideNumber: true,
       history: true, // 各ページをブラウザの履歴に残す
       center: true, // スライドの垂直方向中央表示（false=上寄せ）
-      transition: 'cube',     // none/fade/slide/convex/concave/zoom/cube/page
+      // loop: true,   // スライドをループさせる
+      // autoSlide: 0, // 自動スライドをミリ秒単位で設定。デフォルトは0（自動スライドしない）
+      // autoSlideStoppable: false , // 左下の自動スライド停止用のボタンの表示
+      // mouseWheel: false,      // マウスのホイールによるスライド
+      transition: 'slide',     // none/fade/slide/convex/concave/zoom/cube/page
       transitionSpeed: 'default', // スライド速度を遅く設定。 設定値 default/fast/slow
 
       dependencies: [
@@ -74,8 +77,9 @@
         { src: '../node_modules/reveal.js/plugin/zoom-js/zoom.js', async: true },
         // Speaker notes (with server-side)
         { src: '../node_modules/reveal.js/plugin/notes/notes.js', async: true },
-        // { src: 'socket.io/socket.io.js', async: true },
-        // { src: 'plugin/notes-server/client.js', async: true }
+        // { src: '../node_modules/reveal.js/plugin/notes-server/client.js', async: true }
+        // MathJax
+        { src: '../node_modules/reveal.js/plugin/math/math.js', async: true }
       ],
       keyboard: {
         // 13: 'next', // go to the next slide when the ENTER key is pressed
@@ -83,5 +87,7 @@
     });
 
   </script>
+  <a style="display: block;" href="https://github.com/darai0512"><img style="position: absolute; top: 0; right: 0; border: 0;" src="./img/ribbon.png" alt="by darai0512"></a>
+  <!-- <script type="text/javascript" src="http://services.webestools.com/ribbons/ribbon.js?texte=by%20darai0512&lien=https%3A%2F%2Fgithub.com%2Fdarai0512&color=%23000000&type=fixed&pos=right&size=18&font=opensans&style=11"></script> -->
 </body>
 </html>

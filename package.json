@@ -1,0 +1,16 @@
+{
+  "name": "talks",
+  "author": "Daiki Arai",
+  "private": true,
+  "scripts": {
+    "start": "",
+    "googleslide": "md2gslides"
+  },
+  "dependencies": {
+    "emoji-awesome": "0.0.2",
+    "reveal.js": "^3.7.0"
+  },
+  "devDependencies": {
+    "md2gslides": "^0.4.0"
+  }
+}

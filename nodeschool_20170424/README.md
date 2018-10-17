@@ -1,12 +1,10 @@
-<!-- .slide: data-background-transition: "slide" -->
-
 ## Slack CodeGolf
 
 参加方法: https://goo.gl/forms/OONuFtwtESP2kI5G2
 
 2017/04 @darai0512
 
-![golf](./codegolf.jpg)
+![golf](./img/codegolf.jpg)
 
 ---
 
@@ -16,7 +14,7 @@
 - Nodejs: 1年半前のNode Schoolから
 - PR: [10986](https://github.com/nodejs/node/pull/10986), [11646](https://github.com/nodejs/node/pull/11646), [11646](https://github.com/nodejs/node/pull/11646)
 
-<img src="./profile.jpeg" width="200" height="200"/>
+<img src="./img/profile.jpeg" width="200" height="200"/>
 
 ---
 
@@ -26,7 +24,7 @@
   - 数百人が白熱
 - 自分がSlack APIに置き換えて公開してみた
 
-<img src="./member.png" width="200" height="200"/>
+<img src="./img/member.png" width="200" height="200"/>
 
 ---
 
@@ -45,7 +43,7 @@ general channelには解答者のコードは公開されず
 
 ---
 
-![codegolf](./system.png)
+![golf](./img/system.png)
 
 ---
 

@@ -1,16 +1,15 @@
 .DS_Store
-.sass-cache
-css/reveal.min.css
-js/reveal.min.js
-reveal.js-3.1.0/**
-
-# Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Dependency directories
-node_modules/
-jspm_packages/
+node_modules/*
+!node_modules/emoji-awesome
+!node_modules/reveal.js
+node_modules/reveal.js/*
+!node_modules/reveal.js/js
+!node_modules/reveal.js/css
+!node_modules/reveal.js/lib
+!node_modules/reveal.js/plugin

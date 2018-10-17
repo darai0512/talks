@@ -6,14 +6,14 @@
 
 ## darai0512
 
-<img src="./profile.jpeg" width="200" height="200"/>
+<img src="./img/profile.jpeg" width="200" height="200"/>
 
-<img alt="Qiita" src="./qiita.ico" width="80" height="80"/>
-<img alt="GitHub" src="./octicon-mark-github.svg" width="80" height="80"/>
-<img alt="twitter" src="./twitter.png" width="80" height="80"/>
+<img alt="Qiita" src="./img/qiita.ico" width="80" height="80"/>
+<img alt="GitHub" src="./img/octicon-mark-github.svg" width="80" height="80"/>
+<img alt="twitter" src="./img/twitter.png" width="80" height="80"/>
 
 - Work: Hadoop (java/python), API (Node.js)
-- Like: [codegolf](https://darai0512.github.io/talks/node_school_20170424/), 勉強会
+- Like: codegolf, 勉強会
 
 ---
 
@@ -28,7 +28,7 @@ $ node -p  '{a: 1}'
 
 ---
 
-### Answer
+#### Answer
 
 ```
 $node --help |grep '\-\-print'
@@ -72,7 +72,7 @@ node --experimental-modules hoge.mjs
 
 ### ブラウザ実装状況
 
-![caniuse.com/#feat=es6-module](./es6-module.png)
+![caniuse.com/#feat=es6-module](./img/es6-module.png)
 
 ---
 
@@ -143,7 +143,7 @@ const myPkg = env === 'development' ? require('../mypkg') : require('mypkg');
 
 ### 移行大変そう。でもこの一歩は、
 
-![この一歩は小さいが、人類にとっては大きな飛躍である](./go_universal.jpeg)
+![この一歩は小さいが、人類にとっては大きな飛躍である](./img/go_universal.jpeg)
 
 ---
 
@@ -158,7 +158,8 @@ const myPkg = env === 'development' ? require('../mypkg') : require('mypkg');
 
 ---
 
-### Try Universal JS
+<!-- .slide: style="font-size: 36px"-->
+## Try Universal JS
 
 ```
 $cat validation.mjs
@@ -199,6 +200,7 @@ export default (input) => validation(input);
 
 ---
 
+<!-- .slide: style="font-size: 36px"-->
 ## [HTTP/2](https://tools.ietf.org/html/rfc7540)
 
 - not Text but Binary
@@ -213,7 +215,8 @@ export default (input) => validation(input);
 
 ---
 
-### Performance
+<!-- .slide: style="font-size: 36px"-->
+## Performance
 
 - js/css/画像はなるべく少ないファイル数にすべき?
   - それはHTTP1のTipsで、HTTP2では並列ロードにお任せしてESMで結合がベスト?
@@ -235,6 +238,7 @@ export default (input) => validation(input);
 
 ---
 
+<!-- .slide: style="font-size: 36px"-->
 ### Try HTTP/2 with express
 
 1. 鍵作成
@@ -301,6 +305,10 @@ $node --expose-http2 server.js
 
 listenできた! `https://localhost:8080/`を開くと......
 
+---
+
+### Try HTTP/2 with express: Error
+
 ```
 _http_incoming.js:104
   if (this.socket.readable)
@@ -338,7 +346,7 @@ $node --expose-http2 server.js
 
 `https://localhost:8080/`を開くと......h2通信できた!
 
-![h2](./h2.png)
+![h2](./img/h2.png)
 
 ---
 
