@@ -13,6 +13,6 @@
   "author": "Daiki Arai",
   "license": "MIT",
   "devDependencies": {
-    "md2gslides": "^0.3.0"
+    "md2gslides": "^0.4.0"
   }
 }
