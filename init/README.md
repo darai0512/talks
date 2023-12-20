@@ -12,7 +12,7 @@ by darai0512
 
 |(index)|Values|
 |---|---|
-|name|darai0512|
+|name|**Daiki Arai** a.k.a **darai0512**|
 |company|XXX|
-||YYY|
+|side job|[![株式会社ミツモア](./img/meetsmore.png)](https://meetsmore.com/)|
 |language|Node.js, Python|
