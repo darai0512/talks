@@ -1,13 +1,8 @@
+- [React Native Meetup #21 20250416](https://react-native-meetup.connpass.com/event/341885/): [Slides](https://darai0512.github.io/darai0512/rn21.html#/)
 - [NodeFest(学園祭) 2018 Session](https://nodefest.jp/2018/schedule.html#conference-2-3): [Slides](https://darai0512.github.io/nodefest2018/#/)
-- [NodeSchool#25 20170424](https://nodejs.connpass.com/event/54749/presentation/): [Slides](https://darai0512.github.io/talks/nodeschool_20170424/)
+- [Meguro.es#17 20181004](https://meguroes.connpass.com/event/98856/): [Slides](https://darai0512.github.io/talks/meguroes_20181004/)
 - [Gotanda.js#9 20171006](https://gotandajs.connpass.com/event/66262/): [Slides](https://darai0512.github.io/talks/gotandajs_20171006/)
-- Meguro.es#17 20181004: [Slides](https://darai0512.github.io/talks/meguroes_20181004/)
-
-## Offline
-
-use apache(mac) and access: http://localhost/~darai0512/talks/<dirname>/
-
-setup apache ref: https://qiita.com/darai0512/items/d88662773a070b1bc750#apache
+- [NodeSchool#25 20170424](https://nodejs.connpass.com/event/54749/presentation/): [Slides](https://darai0512.github.io/talks/nodeschool_20170424/)
 
 ## PDF
 
@@ -17,7 +12,6 @@ https://gist.github.com/uupaa/7744760
 - CMD + P & output pdf
 
 # How to make this repository
-
 ```
 $npm i --production
 ```
@@ -46,6 +40,12 @@ option: edit [reveal.js theme](https://revealjs.com/#/themes)
 $vi slide/index.html
 <link rel="stylesheet" href="css/theme/XXX.css" id="theme">
 ```
+
+## Offline
+
+use apache(mac) and access: http://localhost/~darai0512/talks/<dirname>/
+
+setup apache ref: https://qiita.com/darai0512/items/d88662773a070b1bc750#apache
 
 # Other slide frameworks
 ## [impress.js](https://github.com/tsucchi/ruby-markdown2impress)
